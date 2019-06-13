@@ -1,0 +1,23 @@
+[package]
+name = "amfi"
+version = "0.1.0"
+authors = ["Vivek Kushwaha <yoursvivek@gmail.com>"]
+edition = "2018"
+keywords = ["amfi", "mutual funds", "nav"]
+description = "library to fetch latest NAV data from AMFI"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yoursvivek/amfi"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+derive_builder = "0.7.2"
+reqwest = "0.9.18"
+chrono = { version="0.4.6", features = ["serde"] }
+serde = { version = "1.0.92", optional = true }
+synom = "0.11.3"
+log = "0.4.6"
+
+[dev-dependencies]
+serde_json = "1.0.39"
